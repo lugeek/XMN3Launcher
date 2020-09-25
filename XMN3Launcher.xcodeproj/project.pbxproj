@@ -11,7 +11,20 @@
 		C7C18384251C810800D2BED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C18383251C810800D2BED7 /* Assets.xcassets */; };
 		C7C18387251C810800D2BED7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7C18385251C810800D2BED7 /* MainMenu.xib */; };
 		C7C1838A251C810800D2BED7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C18389251C810800D2BED7 /* main.m */; };
+		C7C18399251C812900D2BED7 /* XMN3Overrides.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C18398251C812900D2BED7 /* XMN3Overrides.h */; };
+		C7C1839B251C812900D2BED7 /* XMN3Overrides.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C1839A251C812900D2BED7 /* XMN3Overrides.m */; };
+		C7D78BDF251CB509001757EA /* libXMN3Overrides.dylib in Resources */ = {isa = PBXBuildFile; fileRef = C7C18396251C812900D2BED7 /* libXMN3Overrides.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7D78BE2251CB514001757EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7C18375251C810800D2BED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7C18395251C812900D2BED7;
+			remoteInfo = XMN3Overrides;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C7C1837D251C810800D2BED7 /* XMN3Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMN3Launcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +35,20 @@
 		C7C18388251C810800D2BED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7C18389251C810800D2BED7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7C1838B251C810800D2BED7 /* XMN3Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XMN3Launcher.entitlements; sourceTree = "<group>"; };
+		C7C18396251C812900D2BED7 /* libXMN3Overrides.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libXMN3Overrides.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C18398251C812900D2BED7 /* XMN3Overrides.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMN3Overrides.h; sourceTree = "<group>"; };
+		C7C1839A251C812900D2BED7 /* XMN3Overrides.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMN3Overrides.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C7C1837A251C810800D2BED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C18394251C812900D2BED7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C1837F251C810800D2BED7 /* XMN3Launcher */,
+				C7C18397251C812900D2BED7 /* XMN3Overrides */,
 				C7C1837E251C810800D2BED7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C1837D251C810800D2BED7 /* XMN3Launcher.app */,
+				C7C18396251C812900D2BED7 /* libXMN3Overrides.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +90,27 @@
 			path = XMN3Launcher;
 			sourceTree = "<group>";
 		};
+		C7C18397251C812900D2BED7 /* XMN3Overrides */ = {
+			isa = PBXGroup;
+			children = (
+				C7C18398251C812900D2BED7 /* XMN3Overrides.h */,
+				C7C1839A251C812900D2BED7 /* XMN3Overrides.m */,
+			);
+			path = XMN3Overrides;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7C18392251C812900D2BED7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C18399251C812900D2BED7 /* XMN3Overrides.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C7C1837C251C810800D2BED7 /* XMN3Launcher */ = {
@@ -79,11 +124,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				C7D78BE3251CB514001757EA /* PBXTargetDependency */,
 			);
 			name = XMN3Launcher;
 			productName = XMN3Launcher;
 			productReference = C7C1837D251C810800D2BED7 /* XMN3Launcher.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C7C18395251C812900D2BED7 /* XMN3Overrides */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7C1839C251C812900D2BED7 /* Build configuration list for PBXNativeTarget "XMN3Overrides" */;
+			buildPhases = (
+				C7C18392251C812900D2BED7 /* Headers */,
+				C7C18393251C812900D2BED7 /* Sources */,
+				C7C18394251C812900D2BED7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMN3Overrides;
+			productName = XMN3Overrides;
+			productReference = C7C18396251C812900D2BED7 /* libXMN3Overrides.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +157,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					C7C1837C251C810800D2BED7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					C7C18395251C812900D2BED7 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -112,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				C7C1837C251C810800D2BED7 /* XMN3Launcher */,
+				C7C18395251C812900D2BED7 /* XMN3Overrides */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D78BDF251CB509001757EA /* libXMN3Overrides.dylib in Resources */,
 				C7C18384251C810800D2BED7 /* Assets.xcassets in Resources */,
 				C7C18387251C810800D2BED7 /* MainMenu.xib in Resources */,
 			);
@@ -138,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7C18393251C812900D2BED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C1839B251C812900D2BED7 /* XMN3Overrides.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7D78BE3251CB514001757EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7C18395251C812900D2BED7 /* XMN3Overrides */;
+			targetProxy = C7D78BE2251CB514001757EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7C18385251C810800D2BED7 /* MainMenu.xib */ = {
@@ -269,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XMN3Launcher/XMN3Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZGPD5AZZCP;
@@ -289,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XMN3Launcher/XMN3Launcher.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZGPD5AZZCP;
@@ -300,6 +386,32 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugeek.XMN3Launcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C7C1839D251C812900D2BED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZGPD5AZZCP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7C1839E251C812900D2BED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZGPD5AZZCP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -320,6 +432,15 @@
 			buildConfigurations = (
 				C7C1838F251C810800D2BED7 /* Debug */,
 				C7C18390251C810800D2BED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7C1839C251C812900D2BED7 /* Build configuration list for PBXNativeTarget "XMN3Overrides" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C1839D251C812900D2BED7 /* Debug */,
+				C7C1839E251C812900D2BED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
